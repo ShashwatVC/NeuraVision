@@ -54,6 +54,7 @@ TO BE USED!!!!!!
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 sudo cmake -D CMAKE_BUILD_TYPE=RELEASE\
 -D WITH_CUDA=ON \
+-D WItH_CUDNN=ON \
 -D CUDA_ARCH_PTX="" \
 -D CUDA_ARCH_BIN="5.3,6.2,7.2" \
 -D WITH_CUBLAS=ON \
@@ -65,12 +66,14 @@ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE\
 -D BUILD_opencv_python2=OFF \
 -D BUILD_opencv_java=OFF \
 -D WITH_GSTREAMER=ON \
+-D CUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-10.2 \
 -D WITH_GTK=ON \
 -D BUILD_TESTS=OFF \
 -D BUILD_PERF_TESTS=OFF \
 -D BUILD_EXAMPLES=OFF \
 -D OPENCV_ENABLE_NONFREE=ON \
--D OPENCV_EXTRA_MODULES_PATH=/home/`whoami`/opencv_contrib/modules ..
+-D OPENCV_EXTRA_MODULES_PATH=/home/edge/ocv/opencv_contrib/opencv_contrib-4.5.1
+..
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 To NOT be used!!!!!!!!

@@ -72,8 +72,7 @@ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE\
 -D BUILD_PERF_TESTS=OFF \
 -D BUILD_EXAMPLES=OFF \
 -D OPENCV_ENABLE_NONFREE=ON \
--D OPENCV_EXTRA_MODULES_PATH=/home/edge/ocv/opencv_contrib/opencv_contrib-4.5.1
-..
+-D OPENCV_EXTRA_MODULES_PATH=/home/`whoami`/opencv_contrib/modules ..
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 To NOT be used!!!!!!!!

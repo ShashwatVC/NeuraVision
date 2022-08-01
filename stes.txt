@@ -76,6 +76,22 @@ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE\
 -D OPENCV_ENABLE_NONFREE=ON \
 -D OPENCV_EXTRA_MODULES_PATH=/home/`whoami`/opencv_contrib/modules ..
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+AT PRESET WORKED WITH CUDNN.
+cmake \
+-D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D WITH_CUDA=ON \
+-D WITH_CUDNN=ON \
+-D WITH_CUBLAS=ON \
+-D WITH_TBB=ON \
+-D OPENCV_DNN_CUDA=ON \
+-D OPENCV_ENABLE_NONFREE=ON \
+-D CUDA_ARCH_BIN="5.3" \
+-D WITH_GSTREAMER=ON \
+-D OPENCV_EXTRA_MODULES_PATH=$HOME/opencv_contrib/modules \
+-D BUILD_EXAMPLES=OFF \
+-D HAVE_opencv_python3=ON \
+..
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 To NOT be used!!!!!!!!
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
